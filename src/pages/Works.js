@@ -16,7 +16,7 @@ function Works() {
         </div>
         <div class="title-parent title-home">
           <h4 class={WorksCSS.worksLink}>
-            <a href="" class={WorksCSS.links}>
+            <a href="#" class={WorksCSS.links}>
               Learn more
             </a>
 

@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import AppCSS from "./App.module.css";
 import Home from "./pages/Home";
 
@@ -9,7 +9,6 @@ import Resume from "./pages/Resume";
 import Works from "./pages/Works";
 
 function App() {
-  const path = ["/", "/about", "/works", "/resume", "/contact"];
   const active = {
     color: "#f0860c",
   };
@@ -21,12 +20,7 @@ function App() {
   const [color3, setColor3] = useState(inActive);
   const [color4, setColor4] = useState(inActive);
   const [color5, setColor5] = useState(inActive);
-  const [currentPath, setCurrentPath] = useState("");
 
-  useEffect(() => {
-    setColor1(active);
-    setCurrentPath(path[0]);
-  }, []);
   return (
     <div className={AppCSS.app}>
       <div className={AppCSS.navBar}>
@@ -106,7 +100,7 @@ function App() {
       </div>
 
       <Routes>
-        <Route path={currentPath} element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/resume" element={<Resume />} />
