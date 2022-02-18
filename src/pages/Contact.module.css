@@ -1,0 +1,80 @@
+.content {
+  /* border: 2px solid red; */
+  width: 45vw;
+  height: 75vh;
+  margin-top: 20px;
+  padding-left: 5px;
+  margin-left: 55px;
+  padding-bottom: 15px;
+
+  text-align: left;
+  overflow-y: scroll;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.textColor {
+  color: #f0860c;
+  text-decoration: none;
+}
+
+.learn-more {
+  width: 14px;
+  height: 14px;
+}
+
+.formDisplay {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.formDisplayInput {
+  width: 90%;
+  height: 20px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.textArea {
+  height: 100px;
+  font-size: 15px;
+}
+
+.formInput {
+  background-color: rgba(27, 27, 27, 0.91);
+  border-color: rgba(27, 27, 27, 0.91);
+  border-style: none;
+  border-radius: 10px;
+}
+
+#name:focus,
+#email:focus,
+.inputDisplayOnFocus:focus {
+  color: #ccc;
+  outline: none !important;
+}
+
+.formLabel {
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formSubmit {
+  min-height: 45px;
+  min-width: 116px;
+  margin-top: 10px;
+  border-radius: 12px;
+  color: #f0860c;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.formSubmit:hover {
+  background-color: #f0860c;
+  color: rgba(27, 27, 27);
+}

@@ -1,0 +1,34 @@
+.nav-bar {
+  /* border: 2px solid red; */
+  display: block;
+  /* height: 35px; */
+  width: 100%;
+
+  clear: none;
+  /* background-color: rgba(7, 7, 7, 0.93); */
+}
+
+.nav-bar ul {
+  /* margin-left: 110px; */
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between; */
+}
+
+.nav-bar ul li {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.nav-bar ul li:active {
+  color: #f0860c;
+}
+#contact {
+  padding-left: 450px;
+  cursor: pointer;
+}
