@@ -19,7 +19,6 @@ function About() {
           I strive to create elegant solutions that surprise and delight users,
           while keeping complex technical dependencies in mind for
           implementation, scalability and developer sanity.
-          <img />
         </h3>
         <h3 className={AboutCSS.last}>
           I am so passionate about using software programs to solve societal

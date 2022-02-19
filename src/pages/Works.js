@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import WorksCSS from "./Works.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -16,9 +17,9 @@ function Works() {
         </div>
         <div class="title-parent title-home">
           <h4 class={WorksCSS.worksLink}>
-            <a href="#" class={WorksCSS.links}>
+            <Link to="/works" class={WorksCSS.links}>
               Learn more
-            </a>
+            </Link>
 
             <ArrowForwardIosIcon className={WorksCSS.learnMore}>
               Arrow
