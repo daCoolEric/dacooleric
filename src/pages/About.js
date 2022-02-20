@@ -42,7 +42,7 @@ function About() {
           time thinking and visualizing the solution to a problem before I start
           coding or implementing it.
         </h3>
-        <h3 className={AboutCSS.text}>
+        <div className={`${AboutCSS.text} ${AboutCSS.project}`}>
           Have an interesting project?
           <Link
             to="/contact"
@@ -56,7 +56,7 @@ function About() {
               Arrow
             </ArrowForwardIosIcon>
           </Link>
-        </h3>
+        </div>
       </div>
     </div>
   );

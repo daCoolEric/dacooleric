@@ -14,38 +14,3 @@
 
 /* ---------------------------------------------------------------- */
 /* Nav-bar */
-.navBar {
-  /* border: 2px solid red; */
-  display: block;
-  /* height: 35px; */
-  width: 100%;
-
-  clear: none;
-  /* background-color: rgba(7, 7, 7, 0.93); */
-}
-
-.navBar ul {
-  margin-left: 60px;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-}
-
-.navBar ul li {
-  color: #fff;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  display: inline-block;
-  padding: 20px 20px;
-  cursor: pointer;
-}
-
-.navBar ul li:active {
-  color: #f0860c;
-}
-.contact {
-  margin-left: 620px;
-
-  cursor: pointer;
-}
