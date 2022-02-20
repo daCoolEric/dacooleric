@@ -13,7 +13,7 @@ function Works() {
           </h1>
         </div>
         <div class="title-parent title-home">
-          <h3>Mostly a trip down memory lane.</h3>
+          <h3 class={WorksCSS.text}>Mostly a trip down memory lane.</h3>
         </div>
         <div class="title-parent title-home">
           <h4 class={WorksCSS.worksLink}>

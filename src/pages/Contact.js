@@ -6,16 +6,18 @@ function Contact() {
     <div>
       <div className={ContactCSS.content}>
         <div className="title-parent title-home">
-          <h1 className="title">Let's talk.</h1>
+          <h1 className={ContactCSS.title}>Let's talk.</h1>
         </div>
         <div className="title-parent title-home">
-          <h3 id="contact-info">
+          <div className={ContactCSS.contactInfo}>
             Get in touch via the form below, or by emailing
-            <a href="ayieric7@gmail.com" className={ContactCSS.textColor}>
-              ayieric7@gmail.com
-            </a>
+            <span>
+              <a href="ayieric7@gmail.com" className={ContactCSS.textColor}>
+                ayieric7@gmail.com
+              </a>
+            </span>
             .
-          </h3>
+          </div>
           <form action="">
             <label for="name" className={ContactCSS.formLabel}>
               Name:
