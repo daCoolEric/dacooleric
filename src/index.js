@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import NavBarContextProvider from "./Context/NavBarContext";
 import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <NavBarContextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </NavBarContextProvider>,
 
   document.getElementById("root")
 );

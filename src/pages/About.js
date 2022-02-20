@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavBar } from "../Context/NavBarContext";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import AboutCSS from "./About.module.css";
 
 function About() {
+  const { changeColor } = useNavBar();
   return (
     <div className={AboutCSS.content}>
       <div className="title-parent title-home">
@@ -42,7 +44,13 @@ function About() {
         </h3>
         <h3 className={AboutCSS.text}>
           Have an interesting project?
-          <Link to="/contact" className={AboutCSS.contact}>
+          <Link
+            to="/contact"
+            onClick={() => {
+              changeColor("contact");
+            }}
+            className={AboutCSS.contact}
+          >
             Let's talk
             <ArrowForwardIosIcon className={AboutCSS.learnMore}>
               Arrow

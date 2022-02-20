@@ -1,10 +1,12 @@
 import React from "react";
 import HomeCSS from "./Home.module.css";
 import { Link } from "react-router-dom";
+import { useNavBar } from "../Context/NavBarContext";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 
 function Home() {
+  const { changeColor } = useNavBar();
   return (
     <div>
       <div className={HomeCSS.content}>
@@ -27,7 +29,13 @@ function Home() {
             <ThumbUpAltIcon className={HomeCSS.icon1}>ThumbUp</ThumbUpAltIcon>
           </div>
 
-          <Link to="/about" className={HomeCSS.learnMoreContainer}>
+          <Link
+            to="/about"
+            onClick={() => {
+              changeColor("about");
+            }}
+            className={HomeCSS.learnMoreContainer}
+          >
             <div className={HomeCSS.learnMore}>Learn more</div>
             <ArrowForwardIosIcon className={HomeCSS.icon}>
               Arrow
