@@ -4,7 +4,7 @@ import Project from "./Project";
 function TodoApp() {
   return (
     <div>
-      <Project imagd="first" />
+      <Project />
     </div>
   );
 }

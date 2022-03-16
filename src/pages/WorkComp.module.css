@@ -14,7 +14,9 @@
   color: #fff;
   margin-top: 12px;
 }
-
+.img0 {
+  position: relative;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -27,4 +29,92 @@
   height: 200px;
   border-radius: 20px;
   border: 7px solid #f0860c;
+
+  /* position: relative;
+  top: 100px;
+  left: 0px; */
+}
+
+.imgT {
+  /* outline: 2px solid red; */
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(98, 20, 138, 0.7);
+}
+
+.imgT:hover {
+  background-color: rgba(98, 20, 138, 0);
+}
+
+.imgP {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(206, 93, 1, 0.7);
+}
+
+.imgP:hover {
+  background-color: rgba(206, 93, 1, 0);
+}
+
+.imgW {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(70, 71, 73, 0.7);
+}
+
+.imgW:hover {
+  background-color: rgba(70, 71, 73, 0);
+}
+
+.imgM {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(252, 235, 142, 0.7);
+}
+
+.imgM:hover {
+  background-color: rgba(252, 235, 142, 0);
+}
+
+.imgC {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(57, 71, 100, 0.7);
+}
+.imgC:hover {
+  background-color: rgba(57, 71, 100, 0);
+}
+
+.imgG {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.imgG:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
