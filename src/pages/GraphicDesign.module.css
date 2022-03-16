@@ -59,36 +59,10 @@
   color: #ccc;
 }
 
-.btns {
-  /* outline: 2px solid red; */
-  width: 220px;
-  height: 35px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btn {
-  width: 100px;
-  height: 35px;
-  border-radius: 10px;
-  border-style: none;
-  background-color: rgba(27, 27, 27);
-  color: #f0860c;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #f0860c;
-  color: rgba(27, 27, 27);
-}
-
 .link {
   color: #f0860c;
   text-decoration: none;
+
   font-size: 22px;
   font-family: "Times New Roman", Times, serif;
 }

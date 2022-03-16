@@ -9,6 +9,7 @@ import Works from "./pages/Works";
 import WorkComp from "./pages/WorkComp";
 import Project from "./pages/Project";
 import NavBar from "./components/NavBar";
+import GraphicDesign from "./pages/GraphicDesign";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
         />
         <Route
           path="/works/details/graphic-design"
-          element={<Project imagd="sixth" />}
+          element={<GraphicDesign imagd="sixth" />}
         />
         <Route path="/resume" element={<Resume />} />
 

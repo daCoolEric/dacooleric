@@ -13,8 +13,13 @@ function Resume() {
         <div className="title">
           <h1>Here is a summary of myself</h1>
         </div>
-        <div className="dowloadLink">
-          <Link to="/EricAyi_Tiast_CV.pdf" target="_blank" download>
+        <div>
+          <Link
+            to="/EricAyi_Tiast_CV.pdf"
+            className={ResumeCSS.downloadlink}
+            target="_blank"
+            download
+          >
             Download CV
           </Link>
         </div>

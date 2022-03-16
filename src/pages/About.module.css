@@ -39,20 +39,19 @@ h2 {
 .contact {
   /* outline: 2px solid red; */
   display: flex;
-  width: 118px;
+  width: 180px;
   justify-content: center;
   align-items: center;
   color: #f0860c;
   text-decoration: none;
   margin-left: 5px;
-
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
 }
 
-.project {
+.works {
   /* outline: 2px solid green; */
-  width: 355px;
+  width: 555px;
   display: flex;
   flex-direction: row;
   align-items: baseline;

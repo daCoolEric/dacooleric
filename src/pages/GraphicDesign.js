@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProjectCSS from "./Project.module.css";
+import GraphicDesignCSS from "./GraphicDesign.module.css";
 import todo from "../images/todoApp.png";
 import productPage from "../images/productPage.png";
 import weatherApp from "../images/weatherApp.png";
@@ -64,11 +64,11 @@ const image = {
   },
 };
 
-function Project({ imagd }) {
+function GraphicDesign({ imagd }) {
   console.log(imagd);
   return (
-    <div className={ProjectCSS.container}>
-      <div className={ProjectCSS.img}>
+    <div className={GraphicDesignCSS.container}>
+      <div className={GraphicDesignCSS.img}>
         <img
           src={
             imagd === "first"
@@ -89,8 +89,8 @@ function Project({ imagd }) {
           alt="todo"
         />
       </div>
-      <div className={ProjectCSS.desc}>
-        <div className={ProjectCSS.title}>
+      <div className={GraphicDesignCSS.desc}>
+        <div className={GraphicDesignCSS.title}>
           <h1>
             {imagd === "first"
               ? image.first.title
@@ -107,7 +107,7 @@ function Project({ imagd }) {
               : null}
           </h1>
         </div>
-        <div className={ProjectCSS.body}>
+        <div className={GraphicDesignCSS.body}>
           {imagd === "first"
             ? image.first.desc
             : imagd === "second"
@@ -122,7 +122,7 @@ function Project({ imagd }) {
             ? image.sixth.desc
             : null}
         </div>
-        <div className={ProjectCSS.techUsed}>
+        <div className={GraphicDesignCSS.techUsed}>
           {imagd === "first"
             ? image.first.techUsed
             : imagd === "second"
@@ -137,57 +137,18 @@ function Project({ imagd }) {
             ? image.sixth.techUsed
             : null}
         </div>
-        <div className={ProjectCSS.btns}>
-          <Link
-            to={
-              imagd === "first"
-                ? image.first.link
-                : imagd === "second"
-                ? image.second.link
-                : imagd === "third"
-                ? image.third.link
-                : imagd === "fourth"
-                ? image.fourth.link
-                : imagd === "fifth"
-                ? image.fifth.link
-                : imagd === "sixth"
-                ? image.sixth.link
-                : null
-            }
-          >
-            <button className={ProjectCSS.btn}>Demo</button>
-          </Link>
-          <Link
-            to={
-              imagd === "first"
-                ? image.first.code
-                : imagd === "second"
-                ? image.second.code
-                : imagd === "third"
-                ? image.third.code
-                : imagd === "fourth"
-                ? image.fourth.code
-                : imagd === "fifth"
-                ? image.fifth.code
-                : imagd === "sixth"
-                ? image.sixth.code
-                : null
-            }
-          >
-            <button className={ProjectCSS.btn}>Code</button>
-          </Link>
-        </div>
-        <div className={ProjectCSS.contact}>
+
+        <div className={GraphicDesignCSS.contact}>
           <p>Impressed with works and have a job for me?</p>
 
-          <Link to="/contact" className={ProjectCSS.link}>
+          <Link to="/contact" className={GraphicDesignCSS.link}>
             Lets talk
           </Link>
         </div>
-        <div className={ProjectCSS.moreWorks}>
+        <div className={GraphicDesignCSS.moreWorks}>
           <p>Not convinced and wants to see more?</p>
 
-          <Link to="/works/details" className={ProjectCSS.link}>
+          <Link to="/works/details" className={GraphicDesignCSS.link}>
             Check more works
           </Link>
         </div>
@@ -196,4 +157,4 @@ function Project({ imagd }) {
   );
 }
 
-export default Project;
+export default GraphicDesign;

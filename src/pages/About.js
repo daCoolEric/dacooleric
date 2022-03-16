@@ -42,16 +42,16 @@ function About() {
           time thinking and visualizing the solution to a problem before I start
           coding or implementing it.
         </h3>
-        <div className={`${AboutCSS.text} ${AboutCSS.project}`}>
-          Have an interesting project?
+        <div className={`${AboutCSS.text} ${AboutCSS.works}`}>
+          Interested in examining my works?
           <Link
-            to="/contact"
+            to="/works"
             onClick={() => {
-              changeColor("contact");
+              changeColor("works");
             }}
             className={AboutCSS.contact}
           >
-            Let's talk
+            Check them out
             <ArrowForwardIosIcon className={AboutCSS.learnMore}>
               Arrow
             </ArrowForwardIosIcon>
