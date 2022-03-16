@@ -1,0 +1,30 @@
+.cardContainer {
+  /* outline: 2px solid red; */
+  width: 700px;
+  height: 550px;
+  margin-left: 100px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  grid-gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.title {
+  color: #fff;
+  margin-top: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: 7px solid #f0860c;
+}
