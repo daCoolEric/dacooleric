@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavBar } from "../Context/NavBarContext";
 import ProjectCSS from "./Project.module.css";
 import todo from "../images/todoApp.png";
 import productPage from "../images/productPage.png";
@@ -65,7 +66,7 @@ const image = {
 };
 
 function Project({ imagd }) {
-  console.log(imagd);
+  const { changeColor } = useNavBar();
   return (
     <div className={ProjectCSS.container}>
       <div className={ProjectCSS.img}>
@@ -89,107 +90,115 @@ function Project({ imagd }) {
           alt="todo"
         />
       </div>
-      <div className={ProjectCSS.desc}>
-        <div className={ProjectCSS.title}>
-          <h1>
+      <div className={ProjectCSS.desContainer}>
+        <div className={ProjectCSS.desc}>
+          <div className={ProjectCSS.title}>
+            <h1>
+              {imagd === "first"
+                ? image.first.title
+                : imagd === "second"
+                ? image.second.title
+                : imagd === "third"
+                ? image.third.title
+                : imagd === "fourth"
+                ? image.fourth.title
+                : imagd === "fifth"
+                ? image.fifth.title
+                : imagd === "sixth"
+                ? image.sixth.title
+                : null}
+            </h1>
+          </div>
+          <div className={ProjectCSS.body}>
             {imagd === "first"
-              ? image.first.title
+              ? image.first.desc
               : imagd === "second"
-              ? image.second.title
+              ? image.second.desc
               : imagd === "third"
-              ? image.third.title
+              ? image.third.desc
               : imagd === "fourth"
-              ? image.fourth.title
+              ? image.fourth.desc
               : imagd === "fifth"
-              ? image.fifth.title
+              ? image.fifth.desc
               : imagd === "sixth"
-              ? image.sixth.title
+              ? image.sixth.desc
               : null}
-          </h1>
-        </div>
-        <div className={ProjectCSS.body}>
-          {imagd === "first"
-            ? image.first.desc
-            : imagd === "second"
-            ? image.second.desc
-            : imagd === "third"
-            ? image.third.desc
-            : imagd === "fourth"
-            ? image.fourth.desc
-            : imagd === "fifth"
-            ? image.fifth.desc
-            : imagd === "sixth"
-            ? image.sixth.desc
-            : null}
-        </div>
-        <div className={ProjectCSS.techUsed}>
-          {imagd === "first"
-            ? image.first.techUsed
-            : imagd === "second"
-            ? image.second.techUsed
-            : imagd === "third"
-            ? image.third.techUsed
-            : imagd === "fourth"
-            ? image.fourth.techUsed
-            : imagd === "fifth"
-            ? image.fifth.techUsed
-            : imagd === "sixth"
-            ? image.sixth.techUsed
-            : null}
-        </div>
-        <div className={ProjectCSS.btns}>
-          <Link
-            to={
-              imagd === "first"
-                ? image.first.link
-                : imagd === "second"
-                ? image.second.link
-                : imagd === "third"
-                ? image.third.link
-                : imagd === "fourth"
-                ? image.fourth.link
-                : imagd === "fifth"
-                ? image.fifth.link
-                : imagd === "sixth"
-                ? image.sixth.link
-                : null
-            }
-          >
-            <button className={ProjectCSS.btn}>Demo</button>
-          </Link>
-          <Link
-            to={
-              imagd === "first"
-                ? image.first.code
-                : imagd === "second"
-                ? image.second.code
-                : imagd === "third"
-                ? image.third.code
-                : imagd === "fourth"
-                ? image.fourth.code
-                : imagd === "fifth"
-                ? image.fifth.code
-                : imagd === "sixth"
-                ? image.sixth.code
-                : null
-            }
-          >
-            <button className={ProjectCSS.btn}>Code</button>
-          </Link>
-        </div>
-        <div className={ProjectCSS.contact}>
-          <p>Impressed with works and have a job for me?</p>
+          </div>
+          <div className={ProjectCSS.techUsed}>
+            {imagd === "first"
+              ? image.first.techUsed
+              : imagd === "second"
+              ? image.second.techUsed
+              : imagd === "third"
+              ? image.third.techUsed
+              : imagd === "fourth"
+              ? image.fourth.techUsed
+              : imagd === "fifth"
+              ? image.fifth.techUsed
+              : imagd === "sixth"
+              ? image.sixth.techUsed
+              : null}
+          </div>
+          <div className={ProjectCSS.btns}>
+            <Link
+              to={
+                imagd === "first"
+                  ? image.first.link
+                  : imagd === "second"
+                  ? image.second.link
+                  : imagd === "third"
+                  ? image.third.link
+                  : imagd === "fourth"
+                  ? image.fourth.link
+                  : imagd === "fifth"
+                  ? image.fifth.link
+                  : imagd === "sixth"
+                  ? image.sixth.link
+                  : null
+              }
+            >
+              <button className={ProjectCSS.btn}>Demo</button>
+            </Link>
+            <Link
+              to={
+                imagd === "first"
+                  ? image.first.code
+                  : imagd === "second"
+                  ? image.second.code
+                  : imagd === "third"
+                  ? image.third.code
+                  : imagd === "fourth"
+                  ? image.fourth.code
+                  : imagd === "fifth"
+                  ? image.fifth.code
+                  : imagd === "sixth"
+                  ? image.sixth.code
+                  : null
+              }
+            >
+              <button className={ProjectCSS.btn}>Code</button>
+            </Link>
+          </div>
+          <div className={ProjectCSS.contact}>
+            <p>Impressed with works and have a job for me?</p>
 
-          <Link to="/contact" className={ProjectCSS.link}>
-            Lets talk
-          </Link>
-        </div>
-        <div className={ProjectCSS.moreWorks}>
-          <p>Not convinced and wants to see more?</p>
+            <Link
+              to="/contact"
+              className={ProjectCSS.link}
+              onClick={() => {
+                changeColor("contact");
+              }}
+            >
+              Lets talk
+            </Link>
+          </div>
+          <div className={ProjectCSS.moreWorks}>
+            <p>Not convinced and wants to see more?</p>
 
-          <Link to="/works/details" className={ProjectCSS.link}>
-            Check more works
-          </Link>
+            <Link to="/works/details" className={ProjectCSS.link}>
+              Check more works
+            </Link>
+          </div>
         </div>
       </div>
     </div>

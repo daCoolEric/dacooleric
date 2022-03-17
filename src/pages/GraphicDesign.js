@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavBar } from "../Context/NavBarContext";
 import GraphicDesignCSS from "./GraphicDesign.module.css";
 import todo from "../images/todoApp.png";
 import productPage from "../images/productPage.png";
@@ -65,7 +66,7 @@ const image = {
 };
 
 function GraphicDesign({ imagd }) {
-  console.log(imagd);
+  const { changeColor } = useNavBar();
   return (
     <div className={GraphicDesignCSS.container}>
       <div className={GraphicDesignCSS.img}>
@@ -89,68 +90,76 @@ function GraphicDesign({ imagd }) {
           alt="todo"
         />
       </div>
-      <div className={GraphicDesignCSS.desc}>
-        <div className={GraphicDesignCSS.title}>
-          <h1>
+      <div className={GraphicDesignCSS.desContainer}>
+        <div className={GraphicDesignCSS.desc}>
+          <div className={GraphicDesignCSS.title}>
+            <h1>
+              {imagd === "first"
+                ? image.first.title
+                : imagd === "second"
+                ? image.second.title
+                : imagd === "third"
+                ? image.third.title
+                : imagd === "fourth"
+                ? image.fourth.title
+                : imagd === "fifth"
+                ? image.fifth.title
+                : imagd === "sixth"
+                ? image.sixth.title
+                : null}
+            </h1>
+          </div>
+          <div className={GraphicDesignCSS.body}>
             {imagd === "first"
-              ? image.first.title
+              ? image.first.desc
               : imagd === "second"
-              ? image.second.title
+              ? image.second.desc
               : imagd === "third"
-              ? image.third.title
+              ? image.third.desc
               : imagd === "fourth"
-              ? image.fourth.title
+              ? image.fourth.desc
               : imagd === "fifth"
-              ? image.fifth.title
+              ? image.fifth.desc
               : imagd === "sixth"
-              ? image.sixth.title
+              ? image.sixth.desc
               : null}
-          </h1>
-        </div>
-        <div className={GraphicDesignCSS.body}>
-          {imagd === "first"
-            ? image.first.desc
-            : imagd === "second"
-            ? image.second.desc
-            : imagd === "third"
-            ? image.third.desc
-            : imagd === "fourth"
-            ? image.fourth.desc
-            : imagd === "fifth"
-            ? image.fifth.desc
-            : imagd === "sixth"
-            ? image.sixth.desc
-            : null}
-        </div>
-        <div className={GraphicDesignCSS.techUsed}>
-          {imagd === "first"
-            ? image.first.techUsed
-            : imagd === "second"
-            ? image.second.techUsed
-            : imagd === "third"
-            ? image.third.techUsed
-            : imagd === "fourth"
-            ? image.fourth.techUsed
-            : imagd === "fifth"
-            ? image.fifth.techUsed
-            : imagd === "sixth"
-            ? image.sixth.techUsed
-            : null}
-        </div>
+          </div>
+          <div className={GraphicDesignCSS.techUsed}>
+            {imagd === "first"
+              ? image.first.techUsed
+              : imagd === "second"
+              ? image.second.techUsed
+              : imagd === "third"
+              ? image.third.techUsed
+              : imagd === "fourth"
+              ? image.fourth.techUsed
+              : imagd === "fifth"
+              ? image.fifth.techUsed
+              : imagd === "sixth"
+              ? image.sixth.techUsed
+              : null}
+          </div>
 
-        <div className={GraphicDesignCSS.contact}>
-          <p>Impressed with works and have a job for me?</p>
+          <div className={GraphicDesignCSS.contact}>
+            <p>Impressed with works and have a job for me?</p>
 
-          <Link to="/contact" className={GraphicDesignCSS.link}>
-            Lets talk
-          </Link>
-        </div>
-        <div className={GraphicDesignCSS.moreWorks}>
-          <p>Not convinced and wants to see more?</p>
+            <Link
+              to="/contact"
+              className={GraphicDesignCSS.link}
+              onClick={() => {
+                changeColor("contact");
+              }}
+            >
+              Lets talk
+            </Link>
+          </div>
+          <div className={GraphicDesignCSS.moreWorks}>
+            <p>Not convinced and wants to see more?</p>
 
-          <Link to="/works/details" className={GraphicDesignCSS.link}>
-            Check more works
-          </Link>
+            <Link to="/works/details" className={GraphicDesignCSS.link}>
+              Check more works
+            </Link>
+          </div>
         </div>
       </div>
     </div>

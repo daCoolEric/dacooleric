@@ -15,7 +15,7 @@ function Resume() {
         </div>
         <div>
           <Link
-            to="/EricAyi_Tiast_CV.pdf"
+            to="/EricAyi_CV.pdf"
             className={ResumeCSS.downloadlink}
             target="_blank"
             download

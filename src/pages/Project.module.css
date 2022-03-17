@@ -1,6 +1,6 @@
 .container {
   /* outline: 2px solid red; */
-  width: 880px;
+  width: 900px;
   height: 600px;
   margin-left: 50px;
   display: flex;
@@ -17,6 +17,21 @@
   border: 5px solid #f0860c;
 }
 
+.desContainer {
+  /* outline: 2px solid red; */
+  width: 380px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0.03) 84%
+  );
+  border-radius: 20px;
+}
+
 .desc {
   /* outline: 2px solid red; */
   width: 350px;
@@ -25,11 +40,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 60%,
-    rgba(0, 0, 0, 0.03) 84%
-  );
 }
 
 .title,
