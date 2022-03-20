@@ -140,7 +140,7 @@ function Project({ imagd }) {
               : null}
           </div>
           <div className={ProjectCSS.btns}>
-            <a
+            <Link
               href={
                 imagd === "first"
                   ? image.first.link
@@ -157,10 +157,11 @@ function Project({ imagd }) {
                   : null
               }
               target="_blank"
+              rel="noreferrer"
             >
               <button className={ProjectCSS.btn}>Demo</button>
-            </a>
-            <a
+            </Link>
+            <Link
               href={
                 imagd === "first"
                   ? image.first.code
@@ -177,9 +178,10 @@ function Project({ imagd }) {
                   : null
               }
               target="_blank"
+              rel="noreferrer"
             >
               <button className={ProjectCSS.btn}>Code</button>
-            </a>
+            </Link>
           </div>
           <div className={ProjectCSS.contact}>
             <p>Impressed with works and have a job for me?</p>
