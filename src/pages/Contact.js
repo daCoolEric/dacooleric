@@ -3,12 +3,12 @@ import ContactCSS from "./Contact.module.css";
 
 function Contact() {
   return (
-    <div>
+    <div className={ContactCSS.container}>
       <div className={ContactCSS.content}>
-        <div className="title-parent title-home">
+        <div>
           <h1 className={ContactCSS.title}>Let's talk.</h1>
         </div>
-        <div className="title-parent title-home">
+        <div>
           <div className={ContactCSS.contactInfo}>
             Get in touch via the form below, or by emailing
             <span>

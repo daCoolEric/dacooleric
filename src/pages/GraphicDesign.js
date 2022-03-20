@@ -51,8 +51,8 @@ const image = {
     desc: "This project aims at demonstrating logic, and use of Grid in CSS. The app comes with some cool features. The end-user is able to See the size of the elements adjust based on their device's screen size, perform mathematical operations like addition, subtraction, multiplication, and division, adjust the color theme based on their preference, have their initial theme preference checked using prefers-color-scheme and have any additional changes saved in the browser",
     techUsed:
       "The project employed HTML5, CSS, FlexBox, CSS Grid, Mobile-First Workflow, & Git & Git-Hub in its built.",
-    link: "https//blablabla",
-    code: "https//blablabla",
+    link: "https://dacooleric-calc.netlify.app/",
+    code: "https://github.com/daCoolEric/Simple-Calc",
   },
   sixth: {
     src: graphic,

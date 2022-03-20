@@ -8,7 +8,7 @@ import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 function Home() {
   const { changeColor } = useNavBar();
   return (
-    <div>
+    <div className={HomeCSS.container}>
       <div className={HomeCSS.content}>
         <div className="title-parent title-home">
           <h2 className={HomeCSS.titleEric}>Hi, I'm Eric!</h2>
@@ -21,7 +21,9 @@ function Home() {
             A multi-disciplinary designer with well developed knowledge in full
             stack development.
           </h3>
-          <h3>A creative design director on the team behind grinbox.me. </h3>
+          <h3 className={HomeCSS.text}>
+            A creative design director on the team behind grinbox.me.{" "}
+          </h3>
           <div className={HomeCSS.learnMoreContainer}>
             <h3 className={`${HomeCSS.last} ${HomeCSS.text}`}>
               I have an excellent work ethic.{" "}

@@ -12,11 +12,33 @@ function NavBarContextProvider(props) {
   const inActive = {
     color: "#fff",
   };
+
   const [color1, setColor1] = useState(active);
   const [color2, setColor2] = useState(inActive);
   const [color3, setColor3] = useState(inActive);
   const [color4, setColor4] = useState(inActive);
   const [color5, setColor5] = useState(inActive);
+  const [visibility, setVisibility] = useState("hidden");
+  const [width, setWidth] = useState("0vw");
+  const [transition, setTransition] = useState("0.4s");
+  const [color, setColor] = useState("#fff");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setVisibility("visible");
+    setWidth("100vw");
+    setColor("#fff");
+    setTransition("0.4s");
+    setIsOpen(true);
+  };
+
+  const closeMenu = () => {
+    setVisibility("hidden");
+    setColor("#000");
+    setWidth("0vw");
+    setTransition("0.4s");
+    setIsOpen(false);
+  };
 
   const changeColor = (param) => {
     switch (param) {
@@ -72,7 +94,14 @@ function NavBarContextProvider(props) {
     color3,
     color4,
     color5,
+    visibility,
+    width,
+    transition,
+    color,
+    isOpen,
     changeColor,
+    openMenu,
+    closeMenu,
   };
   return (
     <NavBarContext.Provider value={value}>

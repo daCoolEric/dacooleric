@@ -6,14 +6,14 @@ import ResumeCSS from "./Resume.module.css";
 function Resume() {
   return (
     <div className={ResumeCSS.container}>
-      <div className="sampleresume">
-        <img src={resume} style={{ width: "350px" }} alt="resume" />
+      <div className={ResumeCSS.img}>
+        <img src={resume} style={{ width: "65%" }} alt="resume" />
       </div>
       <div className={ResumeCSS.desc}>
-        <div className="title">
-          <h1>Here is a summary of myself</h1>
+        <div className={ResumeCSS.title}>
+          <h1 className={ResumeCSS.title}>Here is a summary of myself</h1>
         </div>
-        <div>
+        <div className={ResumeCSS.downloadlinkContainer}>
           <Link
             to="/EricAyi_CV.pdf"
             className={ResumeCSS.downloadlink}

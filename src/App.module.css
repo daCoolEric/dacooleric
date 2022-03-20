@@ -1,16 +1,78 @@
 * {
   margin: 0;
 }
-.app {
-  /* outline: 2px solid red; */
-  text-align: center;
-  background-image: url(../public/portEric.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-}
 
 /* ---------------------------------------------------------------- */
 /* Nav-bar */
+/* Extra large screens, TV */
+@media only screen and (min-device-width: 1201px) {
+  .app {
+    outline: 2px solid red;
+    text-align: center;
+    background-image: url(../public/portEric.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+/* Desktops, Large screen */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .app {
+    /* outline: 2px solid red; */
+    text-align: center;
+    background-image: url(../public/portEric.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+/* Small Screens, laptops */
+@media only screen and (min-device-width: 830px) and (max-device-width: 1024px) {
+  .app {
+    /* outline: 2px solid red; */
+    text-align: center;
+    background-image: url(../public/portEric.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+/* iPads, Tablets */
+@media only screen and (min-device-width: 481px) and (max-device-width: 829px) {
+  .app {
+    /* outline: 2px solid blue; */
+    text-align: center;
+    background-color: #000;
+    background-image: url(../public/eric-829px-new.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+/* Mobile Devices */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .app {
+    /* outline: 2px solid blue; */
+    text-align: center;
+    background-image: url(../public/eric-829px-new.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}

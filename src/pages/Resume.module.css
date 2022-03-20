@@ -1,27 +1,171 @@
-.container {
-  /* outline: 2px solid red; */
-  width: 670px;
-  height: 600px;
-  margin-left: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+/* Extra large screens, TV */
+@media only screen and (min-device-width: 1201px) {
+  .container {
+    /* outline: 2px solid red; */
+    width: 670px;
+    height: 600px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.desc {
-  /* outline: 2px solid red; */
-  width: 300px;
-  height: 190px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+  .desc {
+    /* outline: 2px solid red; */
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.downloadlink {
-  color: #f0860c;
-  text-decoration: none;
-  font-size: 22px;
-  font-family: "Times New Roman", Times, serif;
+  .downloadlink {
+    color: #f0860c;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+/* Desktops, Large screen */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .container {
+    /* outline: 2px solid red; */
+    width: 670px;
+    height: 600px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desc {
+    /* outline: 2px solid red; */
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .downloadlink {
+    color: #f0860c;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+/* Small Screens, laptops */
+@media only screen and (min-device-width: 830px) and (max-device-width: 1024px) {
+  .container {
+    /* outline: 2px solid red; */
+    width: 670px;
+    height: 600px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desc {
+    /* outline: 2px solid red; */
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .downloadlink {
+    color: #f0860c;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+/* iPads, Tablets */
+@media only screen and (min-device-width: 481px) and (max-device-width: 829px) {
+  .container {
+    /* outline: 2px solid red; */
+    width: 670px;
+    height: 600px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desc {
+    /* outline: 2px solid red; */
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .downloadlink {
+    color: #f0860c;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+/* Mobile Devices */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    /* outline: 2px solid red; */
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0.09) 100%
+    );
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .desc {
+    /* outline: 2px solid red; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 30px;
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .downloadlink {
+    color: #f0860c;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+  }
+  .downloadlinkContainer {
+    margin-bottom: 20px;
+  }
 }

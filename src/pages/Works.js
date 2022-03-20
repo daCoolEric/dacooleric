@@ -5,17 +5,17 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function Works() {
   return (
-    <div>
+    <div class={WorksCSS.container}>
       <div class={WorksCSS.content}>
-        <div class="title-parent title-home">
+        <div>
           <h1 class={WorksCSS.title}>
             From Graphic Design to Website development.
           </h1>
         </div>
-        <div class="title-parent title-home">
+        <div>
           <h3 class={WorksCSS.text}>Mostly a trip down memory lane.</h3>
         </div>
-        <div class="title-parent title-home">
+        <div>
           <h4 class={WorksCSS.worksLink}>
             <Link to="/works/details" class={WorksCSS.links}>
               Learn more

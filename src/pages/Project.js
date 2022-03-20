@@ -16,8 +16,8 @@ const image = {
     desc: "The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra test. This project demonstrated deep knowledge in react hooks. The user is able to add new todos to the list, mark todos as complete, delete todos from the list, filter by all/active/complete todos, clear all completed todos, and toggle light and dark mode ",
     techUsed:
       "The technologies used here are HTML5, CSS, React.js, Git & Git-Hub, styled-components & Material UI",
-    link: "https//blablabla",
-    code: "https//blablabla",
+    link: "https://dacooleric-todo-app.netlify.app/",
+    code: "https://github.com/daCoolEric/Todo-app-react",
   },
   second: {
     src: productPage,
@@ -33,8 +33,8 @@ const image = {
     title: "Weather App",
     desc: "An aesthetic user-friendly app with some cool features for determining the current weather of any location and also forecasting weather conditions. The project demonsrates deep knowledge in APIs and how to consume them. The cool features include realtime weather for almost any location in the world, location details (like precipitation, humidity, wind speed, uv index and more), weather forecast for 7 days, and option to add other locations",
     techUsed: "This project was built with HTML5, React.js, SCSS, Material UI",
-    link: "https//blablabla",
-    code: "https//blablabla",
+    link: "https://dacooleric-weather-app.netlify.app/",
+    code: "https://github.com/daCoolEric/weather-app",
   },
   fourth: {
     src: movieApp,
@@ -51,8 +51,8 @@ const image = {
     desc: "This project aims at demonstrating logic, and use of Grid in CSS. The app comes with some cool features. The end-user is able to See the size of the elements adjust based on their device's screen size, perform mathematical operations like addition, subtraction, multiplication, and division, adjust the color theme based on their preference, have their initial theme preference checked using prefers-color-scheme and have any additional changes saved in the browser",
     techUsed:
       "The project employed HTML5, CSS, FlexBox, CSS Grid, Mobile-First Workflow, & Git & Git-Hub in its built.",
-    link: "https//blablabla",
-    code: "https//blablabla",
+    link: "https://dacooleric-calc.netlify.app/",
+    code: "https://github.com/daCoolEric/Simple-Calc",
   },
   sixth: {
     src: graphic,
@@ -86,7 +86,7 @@ function Project({ imagd }) {
               ? image.sixth.src
               : null
           }
-          style={{ width: "500px", borderRadius: "20px" }}
+          className={ProjectCSS.image}
           alt="todo"
         />
       </div>
@@ -140,8 +140,8 @@ function Project({ imagd }) {
               : null}
           </div>
           <div className={ProjectCSS.btns}>
-            <Link
-              to={
+            <a
+              href={
                 imagd === "first"
                   ? image.first.link
                   : imagd === "second"
@@ -156,11 +156,12 @@ function Project({ imagd }) {
                   ? image.sixth.link
                   : null
               }
+              target="_blank"
             >
               <button className={ProjectCSS.btn}>Demo</button>
-            </Link>
-            <Link
-              to={
+            </a>
+            <a
+              href={
                 imagd === "first"
                   ? image.first.code
                   : imagd === "second"
@@ -175,9 +176,10 @@ function Project({ imagd }) {
                   ? image.sixth.code
                   : null
               }
+              target="_blank"
             >
               <button className={ProjectCSS.btn}>Code</button>
-            </Link>
+            </a>
           </div>
           <div className={ProjectCSS.contact}>
             <p>Impressed with works and have a job for me?</p>
