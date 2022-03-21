@@ -141,7 +141,7 @@ function Project({ imagd }) {
           </div>
           <div className={ProjectCSS.btns}>
             <Link
-              href={
+              to={
                 imagd === "first"
                   ? image.first.link
                   : imagd === "second"
@@ -162,7 +162,7 @@ function Project({ imagd }) {
               <button className={ProjectCSS.btn}>Demo</button>
             </Link>
             <Link
-              href={
+              to={
                 imagd === "first"
                   ? image.first.code
                   : imagd === "second"

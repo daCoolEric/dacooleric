@@ -12,66 +12,71 @@ function WorkComp() {
   return (
     <div className={WorkCompCSS.cardContainer}>
       <div className={WorkCompCSS.card}>
-        <div className={WorkCompCSS.img0}>
-          <Link to="/works/details/todo-app">
+        <Link to="/works/details/todo-app">
+          <div className={WorkCompCSS.img0}>
             <div className={WorkCompCSS.imgT}></div>
-          </Link>
 
-          <img src={todo} className={WorkCompCSS.img} alt="Logo" />
-        </div>
+            <img src={todo} className={WorkCompCSS.img} alt="Logo" />
+          </div>
+        </Link>
         <div className={WorkCompCSS.title}>Todo App</div>
       </div>
       <div className={WorkCompCSS.card}>
-        <div className={WorkCompCSS.img0}>
-          <Link to="/works/details/product-page">
+        <Link to="/works/details/product-page">
+          <div className={WorkCompCSS.img0}>
             <div className={WorkCompCSS.imgP}></div>
-          </Link>
-          <img src={productPage} className={WorkCompCSS.img} alt="Logo" />
-        </div>
+
+            <img src={productPage} className={WorkCompCSS.img} alt="Logo" />
+          </div>
+        </Link>
         <div className={WorkCompCSS.title}>E-Product Page</div>
       </div>
       <div div className={WorkCompCSS.card}>
-        <div className={WorkCompCSS.img0}>
-          <Link to="/works/details/weather-app">
+        <Link to="/works/details/weather-app">
+          <div className={WorkCompCSS.img0}>
             <div className={WorkCompCSS.imgW}></div>
-          </Link>
-          <div>
-            <img src={weatherApp} className={WorkCompCSS.img} alt="Logo" />
+
+            <div>
+              <img src={weatherApp} className={WorkCompCSS.img} alt="Logo" />
+            </div>
           </div>
-        </div>
+        </Link>
         <div className={WorkCompCSS.title}>Weather App</div>
       </div>
       <div className={WorkCompCSS.card}>
-        <div className={WorkCompCSS.img0}>
-          <Link to="/works/details/movie-app">
+        <Link to="/works/details/movie-app">
+          <div className={WorkCompCSS.img0}>
             <div className={WorkCompCSS.imgM}></div>
-          </Link>
-          <div>
-            <img src={movieApp} className={WorkCompCSS.img} alt="Logo" />
+
+            <div>
+              <img src={movieApp} className={WorkCompCSS.img} alt="Logo" />
+            </div>
           </div>
-        </div>
+        </Link>
         <div className={WorkCompCSS.title}>Movie App</div>
       </div>
       <div className={WorkCompCSS.card}>
-        <div className={WorkCompCSS.img0}>
-          <Link to="/works/details/simple-calc">
+        <Link to="/works/details/simple-calc">
+          <div className={WorkCompCSS.img0}>
             <div className={WorkCompCSS.imgC}></div>
-          </Link>
-          <div>
-            <img src={calc} className={WorkCompCSS.img} alt="Logo" />
+
+            <div>
+              <img src={calc} className={WorkCompCSS.img} alt="Logo" />
+            </div>
           </div>
-        </div>
+        </Link>
         <div className={WorkCompCSS.title}>Simple Calculator</div>
       </div>
       <div className={WorkCompCSS.card}>
-        <div className={WorkCompCSS.img0}>
-          <Link to="/works/details/graphic-design">
+        <Link to="/works/details/graphic-design">
+          <div className={WorkCompCSS.img0}>
             <div className={WorkCompCSS.imgG}></div>
-          </Link>
-          <div>
-            <img src={graphic} className={WorkCompCSS.img} alt="Logo" />
+
+            <div>
+              <img src={graphic} className={WorkCompCSS.img} alt="Logo" />
+            </div>
           </div>
-        </div>
+        </Link>
         <div className={WorkCompCSS.title}>Graphic Design</div>
       </div>
     </div>
