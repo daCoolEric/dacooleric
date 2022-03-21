@@ -10,20 +10,25 @@
   }
   .content {
     /* outline: 2px solid red; */
-    width: 50%;
-    height: 80vh;
-    margin-top: 105px;
-    margin-left: 100px;
-    padding-bottom: 10px;
+    width: 100vw;
+    height: 65vh;
+
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(0, 0, 0, 0.09) 90%
+    );
+    overflow: scroll;
+  }
+
+  .contentScroll {
+    /* outline: 2px solid blue; */
+    margin-top: 0px;
+    padding-bottom: 15px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 30%,
-      rgba(0, 0, 0, 0.09) 100%
-    );
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .content::-webkit-scrollbar {
