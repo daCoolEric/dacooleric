@@ -28,8 +28,8 @@ function About() {
           </h3>
           <h3 className={`${AboutCSS.last} ${AboutCSS.text}`}>
             I am so passionate about using software programs to solve societal
-            problems. I believe when I deep into technology I will reach the
-            forces that shape the very essence of our lives. In contemporary
+            problems. I believe when I dive deep into technology I will reach
+            the forces that shape the very essence of our lives. In contemporary
             conditions, I find myself greatly influenced by distributed systems
             and embedded systems. I'm also interested in data structures and
             algorithms for solving social problems, design patterns, and clean
