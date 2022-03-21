@@ -25,15 +25,17 @@ function NavBar() {
   return (
     <div className={NavBarCSS.navBar}>
       <div className={NavBarCSS.menuContainer}>
-        <img
-          src={MenuIcon}
-          style={{
-            padding: "10px",
-            width: "30px",
-          }}
-          onClick={() => openMenu()}
-          alt=""
-        />
+        <div className={NavBarCSS.menuBtn}>
+          <img
+            src={MenuIcon}
+            style={{
+              padding: "10px",
+              width: "50px",
+            }}
+            onClick={() => openMenu()}
+            alt=""
+          />
+        </div>
       </div>
       <div
         className={NavBarCSS.middleMenu}

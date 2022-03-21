@@ -300,7 +300,7 @@
 /* Mobile Devices */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .navBar {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 
     width: 100vw;
     height: 10vh;
@@ -324,13 +324,23 @@
   }
 
   .menuContainer {
-    /* border: 2px solid green; */
-    display: "flex";
-    width: 50px;
-    height: 50px;
+    /* outline: 2px solid green; */
+    display: flex;
+    width: 70px;
+    height: 70px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     visibility: visible;
+  }
+
+  .menuBtn {
+    /* outline: 2px solid red; */
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background-color: #f0860c;
+    border-radius: 10px;
   }
 
   .middleMenu {
